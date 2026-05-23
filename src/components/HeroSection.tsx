@@ -1,18 +1,14 @@
 "use client";
 
-import * as React from "react";
 import Link from "next/link";
 import { HeroVideoBackground } from "./HeroVideoBackground";
-import { VideoModal } from "./VideoModal";
 
 /**
  * Full-bleed cinematic hero.
  * Video background covers the entire section.
  * Editorial column overlaid on the left in bone/white for legibility.
- * Subtle bottom CTA opens the full commercial with sound in a modal.
  */
 export function HeroSection() {
-  const [open, setOpen] = React.useState(false);
 
   return (
     <section className="relative isolate overflow-hidden bg-sh-navy-deep min-h-[88vh] md:min-h-[92vh] flex flex-col">
@@ -106,37 +102,18 @@ export function HeroSection() {
         </div>
       </div>
 
-      {/* Bottom strip — film caption + sound CTA */}
+      {/* Bottom strip — film caption only */}
       <div className="relative z-10 mx-auto w-full max-w-7xl px-5 md:px-8 pb-6 md:pb-10">
-        <div className="flex flex-wrap items-end justify-between gap-6 border-t border-sh-bone/15 pt-5 md:pt-7">
-          <div className="flex flex-col gap-1">
-            <span
-              className="font-display text-base md:text-lg leading-tight max-w-xs"
-              style={{ color: "rgba(250, 250, 246, 0.92)" }}
-            >
-              Industrial scale, held to the standard.
-            </span>
-            <span className="font-mono text-[10px] uppercase tracking-[0.32em] text-sh-bone/55">
-              3PL Intermodal · Manufacturing · R&D Laboratory
-            </span>
-          </div>
-
-          <button
-            type="button"
-            onClick={() => setOpen(true)}
-            aria-label="Watch the full commercial with sound"
-            className="group inline-flex items-center gap-3 px-5 py-3 border border-sh-bone/60 text-sh-bone bg-sh-navy-deep/40 hover:bg-sh-bone hover:text-sh-navy backdrop-blur-sm transition-colors"
+        <div className="flex flex-col gap-1 border-t border-sh-bone/15 pt-5 md:pt-7">
+          <span
+            className="font-display text-base md:text-lg leading-tight max-w-xs"
+            style={{ color: "rgba(250, 250, 246, 0.92)" }}
           >
-            <span className="relative w-7 h-7 flex items-center justify-center">
-              <span className="absolute inset-0 rounded-full border border-current opacity-60 group-hover:scale-110 transition-transform" />
-              <svg width="10" height="10" viewBox="0 0 12 12" fill="none" aria-hidden>
-                <path d="M3 1.5L10 6L3 10.5V1.5Z" fill="currentColor" />
-              </svg>
-            </span>
-            <span className="font-mono text-[11px] uppercase tracking-[0.28em]">
-              Watch with sound · 0:25
-            </span>
-          </button>
+            Industrial scale, held to the standard.
+          </span>
+          <span className="font-mono text-[10px] uppercase tracking-[0.32em] text-sh-bone/55">
+            3PL Intermodal · Manufacturing · R&amp;D Laboratory
+          </span>
         </div>
       </div>
 
@@ -157,11 +134,6 @@ export function HeroSection() {
         />
       </div>
 
-      <VideoModal
-        open={open}
-        onClose={() => setOpen(false)}
-        src="/video/commercial.mp4"
-      />
     </section>
   );
 }
