@@ -213,7 +213,7 @@ export async function POST(req: Request) {
 
     // 3. Email the lead via Resend
     const resendKey = process.env.RESEND_API_KEY;
-    const toAddr = process.env.LEADS_TO_EMAIL || "hello@stonehengetrust.com";
+    const toAddr = process.env.LEADS_TO_EMAIL || "info@stonehengetrust.com";
     const fromAddr =
       process.env.LEADS_FROM_EMAIL || "Stonehenge Trust <onboarding@resend.dev>";
 

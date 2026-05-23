@@ -112,10 +112,10 @@ export function ContactPage() {
                         <p className="mt-4 text-sh-slate text-sm">
                           For urgent regulatory matters, write directly to{" "}
                           <a
-                            href="mailto:hello@stonehengetrust.com"
+                            href="mailto:info@stonehengetrust.com"
                             className="text-sh-navy link-quiet"
                           >
-                            hello@stonehengetrust.com
+                            info@stonehengetrust.com
                           </a>
                           .
                         </p>
@@ -201,10 +201,10 @@ export function ContactPage() {
                             <p className="mt-2 text-sm text-sh-slate">
                               You can also email us directly at{" "}
                               <a
-                                href="mailto:hello@stonehengetrust.com"
+                                href="mailto:info@stonehengetrust.com"
                                 className="text-sh-navy link-quiet"
                               >
-                                hello@stonehengetrust.com
+                                info@stonehengetrust.com
                               </a>
                               .
                             </p>
@@ -249,10 +249,10 @@ export function ContactPage() {
                   <p className="eyebrow">Direct</p>
                   <p className="mt-4 font-display text-2xl text-sh-navy">
                     <a
-                      href="mailto:hello@stonehengetrust.com"
+                      href="mailto:info@stonehengetrust.com"
                       className="link-quiet"
                     >
-                      hello@stonehengetrust.com
+                      info@stonehengetrust.com
                     </a>
                   </p>
                   <p className="mt-2 text-sh-slate text-sm">

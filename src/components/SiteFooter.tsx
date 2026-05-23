@@ -35,10 +35,10 @@ export function SiteFooter() {
                 Contact
               </p>
               <a
-                href="mailto:hello@stonehengetrust.com"
+                href="mailto:info@stonehengetrust.com"
                 className="mt-2 inline-block text-sh-bone link-quiet text-sm"
               >
-                hello@stonehengetrust.com
+                info@stonehengetrust.com
               </a>
             </div>
           </div>
