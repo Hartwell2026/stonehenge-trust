@@ -263,23 +263,6 @@ export function ContactPage() {
 
               <Reveal delay={0.08}>
                 <div>
-                  <p className="eyebrow">For Suppliers</p>
-                  <p className="mt-4 font-display text-2xl text-sh-navy">
-                    <a
-                      href="mailto:suppliers@stonehengetrust.com"
-                      className="link-quiet"
-                    >
-                      suppliers@stonehengetrust.com
-                    </a>
-                  </p>
-                  <p className="mt-2 text-sh-slate text-sm">
-                    Credential submissions and onboarding.
-                  </p>
-                </div>
-              </Reveal>
-
-              <Reveal delay={0.16}>
-                <div>
                   <p className="eyebrow">Office Hours</p>
                   <ul className="mt-4 space-y-2 text-sh-graphite">
                     <li className="flex justify-between border-b border-sh-stone pb-2">
