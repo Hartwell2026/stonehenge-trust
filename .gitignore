@@ -51,3 +51,5 @@ next-env.d.ts
 
 # project-specific — dev-only preview/launch configs
 /.claude
+
+.vercel
