@@ -6,6 +6,7 @@ import { ComplianceNetwork } from "@/components/ComplianceNetwork";
 import { CounterStat } from "@/components/CounterStat";
 import { StandardsMarquee } from "@/components/StandardsMarquee";
 import { SpotlightCard } from "@/components/SpotlightCard";
+import { StructuredData } from "@/components/StructuredData";
 
 const SERVICES = [
   {
@@ -83,6 +84,7 @@ const VERIFICATION_CYCLE = [
 export default function HomePage() {
   return (
     <>
+      <StructuredData />
       {/* ─── Hero — full-bleed cinematic background ─────────── */}
       <HeroSection />
 

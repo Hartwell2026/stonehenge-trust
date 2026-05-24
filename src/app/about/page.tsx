@@ -5,7 +5,8 @@ import { Reveal, Stagger, StaggerItem } from "@/components/Motion";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Stonehenge Trust is a boutique compliance firm built on permanence, fiduciary care, and restraint. ISO, ACD, EPA work delivered by the people who scope it.",
+    "Stonehenge Trust is a boutique compliance firm in the United States serving chemical distributors, warehouses, and carriers with ACD Responsible Distribution verification, ISO 9001/14001/45001 management systems, and EPA regulatory work.",
+  alternates: { canonical: "/about" },
 };
 
 const TIMELINE = [

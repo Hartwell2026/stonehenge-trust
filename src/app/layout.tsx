@@ -33,13 +33,49 @@ export const metadata: Metadata = {
     template: "%s — Stonehenge Trust",
   },
   description:
-    "A boutique compliance firm guiding industrial operators through ISO management systems, Annual Compliance Demonstrations, and EPA regulatory work. Built on permanence and trust.",
+    "A boutique compliance firm guiding industrial operators through ISO management systems, ACD Responsible Distribution verification, and EPA regulatory work. Built on permanence and trust.",
+  applicationName: "Stonehenge Trust",
+  category: "business",
+  keywords: [
+    "ACD Responsible Distribution",
+    "ISO 9001 14001 45001 consulting",
+    "EPA regulatory compliance",
+    "TSCA RCRA SPCC consultant",
+    "chemical compliance services",
+    "EHS&S training",
+    "Responsible Distribution verification",
+    "chemical distributor compliance",
+    "management system certification",
+    "boutique compliance firm",
+  ],
+  alternates: {
+    canonical: "https://stonehengetrust.com/",
+  },
   openGraph: {
+    title: "Stonehenge Trust — ISO, ACD & EPA Compliance",
+    description:
+      "Boutique compliance for chemical distributors, manufacturers, and bulk handlers — ISO 9001/14001/45001, ACD Responsible Distribution, EPA regulatory programs.",
+    url: "https://stonehengetrust.com",
+    siteName: "Stonehenge Trust",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
     title: "Stonehenge Trust",
     description:
       "ISO · ACD · EPA compliance — boutique authority for industrial operators.",
-    type: "website",
-    siteName: "Stonehenge Trust",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
   },
 };
 

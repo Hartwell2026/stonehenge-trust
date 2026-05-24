@@ -5,7 +5,8 @@ import { Reveal, Stagger, StaggerItem } from "@/components/Motion";
 export const metadata: Metadata = {
   title: "Customers",
   description:
-    "Stonehenge Trust serves industrial operators in chemical manufacturing, specialty coatings, energy services, and food-grade processing. Direct engagements, scoped honestly.",
+    "Stonehenge Trust serves chemical distributors, warehouses and 3PL operators, bulk carriers, specialty chemical manufacturers, and importers — ACD Responsible Distribution, ISO 9001/14001/45001, and EPA regulatory work.",
+  alternates: { canonical: "/customers" },
 };
 
 const VERTICALS = [

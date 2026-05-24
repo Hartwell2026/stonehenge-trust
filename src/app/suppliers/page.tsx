@@ -5,7 +5,8 @@ import { Reveal, Stagger, StaggerItem } from "@/components/Motion";
 export const metadata: Metadata = {
   title: "Suppliers",
   description:
-    "Stonehenge Trust works with a small bench of laboratory, sampling, and credentialed specialist suppliers. Standards, onboarding, and continuity expectations.",
+    "Stonehenge Trust works with a small bench of accredited laboratory, sampling, and credentialed specialist suppliers supporting ACD, ISO, and EPA work product. Standards, onboarding, and continuity expectations.",
+  alternates: { canonical: "/suppliers" },
 };
 
 const TIERS = [
