@@ -6,11 +6,16 @@
 const ORG = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
+  "@id": "https://stonehengetrust.com/#organization",
   name: "Stonehenge Trust",
   url: "https://stonehengetrust.com",
   logo: "https://stonehengetrust.com/brand/logo.svg",
+  image: "https://stonehengetrust.com/opengraph-image",
   description:
     "A boutique compliance firm guiding chemical distributors, manufacturers, and industrial operators through ISO 9001/14001/45001 management systems, ACD Responsible Distribution verification, and EPA regulatory programs.",
+  slogan: "Compliance, built to hold.",
+  foundingDate: "2026-05-15",
+  founder: { "@type": "Organization", name: "Stonehenge Trust" },
   areaServed: [{ "@type": "Country", name: "United States" }],
   knowsAbout: [
     "ACD Responsible Distribution",
@@ -97,10 +102,36 @@ const FAQ = {
   ],
 };
 
+// WebPage schema with author + publication dates — satisfies LinkedIn Post
+// Inspector, Facebook OG debugger, and Google rich-result author signals.
+const WEBPAGE = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://stonehengetrust.com/#webpage",
+  url: "https://stonehengetrust.com/",
+  name: "Stonehenge Trust — ISO, ACD & EPA Compliance",
+  description:
+    "Boutique compliance firm guiding chemical distributors, manufacturers, and industrial operators through ISO 9001/14001/45001, ACD Responsible Distribution, and EPA regulatory programs.",
+  inLanguage: "en-US",
+  isPartOf: { "@id": "https://stonehengetrust.com/#organization" },
+  about: { "@id": "https://stonehengetrust.com/#organization" },
+  author: { "@id": "https://stonehengetrust.com/#organization" },
+  publisher: { "@id": "https://stonehengetrust.com/#organization" },
+  datePublished: "2026-05-15T00:00:00Z",
+  dateModified: "2026-05-24T00:00:00Z",
+  primaryImageOfPage: {
+    "@type": "ImageObject",
+    url: "https://stonehengetrust.com/opengraph-image",
+    width: 1200,
+    height: 630,
+  },
+};
+
 export function StructuredData() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ORG) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(WEBPAGE) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(SERVICE_CATALOG) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ) }} />
     </>

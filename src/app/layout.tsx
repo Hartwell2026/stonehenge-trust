@@ -38,6 +38,9 @@ export const metadata: Metadata = {
     "A boutique compliance firm guiding industrial operators through ISO management systems, ACD Responsible Distribution verification, and EPA regulatory work. Built on permanence and trust.",
   applicationName: "Stonehenge Trust",
   category: "business",
+  authors: [{ name: "Stonehenge Trust", url: "https://stonehengetrust.com" }],
+  creator: "Stonehenge Trust",
+  publisher: "Stonehenge Trust",
   keywords: [
     "ACD Responsible Distribution",
     "ISO 9001 14001 45001 consulting",
@@ -81,6 +84,16 @@ export const metadata: Metadata = {
   },
   verification: {
     google: "rdEONhMzLqoPpV0cMym7iu4RpDPckKEUtKs175p3fPI",
+  },
+  // LinkedIn / Facebook Post Inspector fields. LinkedIn looks for these
+  // even on non-article pages — without them it reports "No author found"
+  // and "No publication date found".
+  other: {
+    "article:author": "Stonehenge Trust",
+    "article:publisher": "https://stonehengetrust.com",
+    "article:published_time": "2026-05-15T00:00:00Z",
+    "article:modified_time": new Date().toISOString(),
+    "article:section": "Compliance",
   },
 };
 
