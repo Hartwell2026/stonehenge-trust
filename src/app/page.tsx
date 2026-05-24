@@ -7,6 +7,7 @@ import { CounterStat } from "@/components/CounterStat";
 import { StandardsMarquee } from "@/components/StandardsMarquee";
 import { SpotlightCard } from "@/components/SpotlightCard";
 import { StructuredData } from "@/components/StructuredData";
+import { FAQSection } from "@/components/FAQSection";
 
 const SERVICES = [
   {
@@ -361,6 +362,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* ─── FAQ ─────────────────────────────────────────────── */}
+      <FAQSection />
 
       {/* ─── CTA ─────────────────────────────────────────────── */}
       <section className="bg-sh-bone">
