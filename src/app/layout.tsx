@@ -85,16 +85,6 @@ export const metadata: Metadata = {
   verification: {
     google: "rdEONhMzLqoPpV0cMym7iu4RpDPckKEUtKs175p3fPI",
   },
-  // LinkedIn / Facebook Post Inspector fields. LinkedIn looks for these
-  // even on non-article pages — without them it reports "No author found"
-  // and "No publication date found".
-  other: {
-    "article:author": "Stonehenge Trust",
-    "article:publisher": "https://stonehengetrust.com",
-    "article:published_time": "2026-05-15T00:00:00Z",
-    "article:modified_time": new Date().toISOString(),
-    "article:section": "Compliance",
-  },
 };
 
 export default function RootLayout({

@@ -128,8 +128,20 @@ const WEBPAGE = {
 };
 
 export function StructuredData() {
+  const modified = new Date().toISOString();
   return (
     <>
+      {/* LinkedIn Post Inspector + Facebook Open Graph debugger fields.
+          Rendered as raw <meta> tags so they emit `property=` (not `name=`)
+          which the metadata.other API can't produce. React 19 hoists these
+          into <head> automatically. */}
+      <meta property="article:author" content="Stonehenge Trust" />
+      <meta property="article:publisher" content="https://stonehengetrust.com" />
+      <meta property="article:published_time" content="2026-05-15T00:00:00Z" />
+      <meta property="article:modified_time" content={modified} />
+      <meta property="article:section" content="Compliance" />
+      <meta property="og:updated_time" content={modified} />
+
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ORG) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(WEBPAGE) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(SERVICE_CATALOG) }} />
