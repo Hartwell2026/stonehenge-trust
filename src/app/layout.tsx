@@ -6,6 +6,8 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { RetellChat } from "@/components/RetellChat";
+import { ConsentProvider } from "@/components/consent/ConsentProvider";
+import { CookieBanner } from "@/components/consent/CookieBanner";
 
 const aldrich = Aldrich({
   subsets: ["latin"],
@@ -96,12 +98,15 @@ export default function RootLayout({
       className={`${aldrich.variable} ${inter.variable} ${jetbrains.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-sh-bone text-sh-graphite">
-        <SiteHeader />
-        <main className="flex-1">{children}</main>
-        <SiteFooter />
-        <RetellChat />
-        <Analytics />
-        <SpeedInsights />
+        <ConsentProvider>
+          <SiteHeader />
+          <main className="flex-1">{children}</main>
+          <SiteFooter />
+          <RetellChat />
+          <CookieBanner />
+          <Analytics />
+          <SpeedInsights />
+        </ConsentProvider>
       </body>
     </html>
   );

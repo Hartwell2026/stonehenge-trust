@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Logo } from "./Logo";
+import { CookieSettingsButton } from "@/components/consent/CookieSettingsButton";
 
 const SERVICES = [
   "ACD Responsible Distribution",
@@ -92,9 +93,14 @@ export function SiteFooter() {
           <p className="font-mono uppercase tracking-widest">
             © {new Date().getFullYear()} Stonehenge Trust LLC. All rights reserved.
           </p>
-          <p className="font-mono uppercase tracking-widest">
-            Boutique · ISO · ACD · EPA
-          </p>
+          <div className="flex flex-wrap items-center gap-x-5 gap-y-2 font-mono uppercase tracking-widest">
+            <Link href="/privacy" className="hover:text-sh-bone">Privacy</Link>
+            <Link href="/cookies" className="hover:text-sh-bone">Cookies</Link>
+            <CookieSettingsButton
+              label="Cookie Settings"
+              className="font-mono uppercase tracking-widest hover:text-sh-bone"
+            />
+          </div>
         </div>
       </div>
     </footer>
